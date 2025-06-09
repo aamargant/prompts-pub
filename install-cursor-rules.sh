@@ -13,7 +13,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Repository information
-REPO_URL="https://github.com/your-username/prompts.git"
+REPO_URL="https://github.com/aamargant/prompts.git"
 TEMP_DIR="/tmp/prompts-$$"
 
 print_header() {
