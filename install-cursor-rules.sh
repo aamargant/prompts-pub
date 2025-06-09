@@ -124,19 +124,8 @@ main() {
         exit 1
     fi
     
-    # Add .cursor directory to .gitignore if it doesn't exist
-    print_step "Updating .gitignore..."
-    if [ -f "$TARGET_DIR/.gitignore" ]; then
-        if ! grep -q "^\.cursor/" "$TARGET_DIR/.gitignore" 2>/dev/null; then
-            echo ".cursor/" >> "$TARGET_DIR/.gitignore"
-            print_success "Added .cursor/ to .gitignore"
-        else
-            print_info ".cursor/ already in .gitignore"
-        fi
-    else
-        echo ".cursor/" > "$TARGET_DIR/.gitignore"
-        print_success "Created .gitignore with .cursor/ entry"
-    fi
+    # Note: .cursor directory should be tracked in git to share cursor rules
+    print_info "Cursor rules are ready to use and can be committed to your repository"
     
     # Final instructions
     echo
