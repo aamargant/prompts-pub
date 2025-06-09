@@ -48,3 +48,40 @@ Visuals & Micro-interactions: Use a library of simple, consistent icons (e.g., S
 
 Deliverable
 Deliver a high-fidelity, interactive prototype that demonstrates these design principles. The focus is on the visual design, the interaction patterns, and the overall user experience. Provide the complete code (HTML, CSS, JavaScript) necessary to bring this unique vision to life.
+
+MCP Server Integration & Testing
+Leverage available MCP servers to enhance the design process and ensure quality:
+
+Visual Verification & Screenshots:
+
+- Use Browserbase Screenshot or Stagehand Screenshot capabilities to capture visual states of your interface during development
+- Take screenshots at key interaction points (hover states, expanded panels, different viewport sizes) to verify the "no wasted pixels" philosophy is maintained
+- Verify that information density doesn't compromise readability or usability across different screen sizes
+
+Browser Automation for Complex Flows:
+
+- Utilize Stagehand or Hyperbrowser Browser Use Agent to automate complex user interaction sequences
+- Test in-place expansion behaviors by automating hover → click → expand → collapse sequences
+- Verify contextual tooling appears and disappears correctly during automated interaction flows
+- Automate form filling, navigation patterns, and multi-step workflows to ensure the compact design doesn't hinder usability
+
+Quality Assurance Through Automation:
+
+- Use browser automation to test responsive behavior at different viewport sizes
+- Automate accessibility checks (tab navigation, keyboard shortcuts) within the dense interface
+- Test performance of micro-interactions and animations under automated stress
+- Verify that "living widgets" and ambient information updates work correctly during extended use
+
+Implementation Testing:
+
+- Navigate through the complete application using browser automation to identify any UX friction points
+- Test edge cases where information density might create confusion or interaction conflicts
+- Automate repetitive tasks within your interface to verify the design philosophy enhances rather than hinders productivity
+
+Integration Workflow:
+
+1. Build your interface following the design principles
+2. Use screenshot tools to capture and review visual density at each development milestone
+3. Implement browser automation to test complex interaction patterns
+4. Iterate based on automated testing feedback to refine the "Information Density & Creative Compactness" approach
+5. Use automation to demonstrate the final interface capabilities through realistic usage scenarios
