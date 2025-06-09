@@ -13,7 +13,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Repository information
-REPO_URL="https://github.com/aamargant/prompts.git"
+REPO_URL="https://github.com/aamargant/prompts-pub.git"
 TEMP_DIR="/tmp/prompts-$$"
 
 print_header() {
@@ -146,6 +146,7 @@ main() {
     echo "  1. Restart Cursor IDE to apply the new rules"
     echo "  2. Open any file and test the enhanced AI behavior"
     echo "  3. Choose between available rules:"
+    echo "     • ai-web-interface-designer.mdc - For information-dense, creative web interfaces"
     echo "     • deep-thought.mdc - For comprehensive analysis and reasoning"
     echo "     • precision-efficiency.mdc - For structured, concise responses"
     echo
